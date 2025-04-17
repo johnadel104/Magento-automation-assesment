@@ -1,0 +1,20 @@
+{
+  "name": "magneto-cucumber",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": "",
+  "devDependencies": {
+    "@wdio/cli": "^9.12.5",
+    "@wdio/cucumber-framework": "^9.12.5",
+    "@wdio/local-runner": "^9.12.5",
+    "@wdio/spec-reporter": "^9.12.3",
+    "@wdio/visual-service": "^6.4.0",
+    "chromedriver": "^135.0.1"
+  }
+}

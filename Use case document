@@ -1,0 +1,81 @@
+Use Case Document – Magento Automation Assessment
+
+Objective
+
+Automate key e-commerce functionalities on the Magento demo site using WebdriverIO with Cucumber to simulate real-world customer journeys and validate UI behavior.
+
+
+---
+
+Use Case 1: Product Search
+
+Title: Search for a product
+
+Actor: End user
+
+Precondition: User is on the Magento homepage
+
+Description: User types a product keyword into the search bar (e.g., "jacket") and views the relevant search results.
+
+Expected Result: The page displays products that contain the keyword in their title.
+
+
+
+---
+
+Use Case 2: Add Product to Cart
+
+Title: Add product to cart after selecting size and color
+
+Actor: End user
+
+Precondition: User is on the search results page and product has selectable options
+
+Description: User clicks on the first product from search results, selects a size and color, and adds the item to the cart.
+
+Expected Result: Product is added to the mini cart and confirmed visually.
+
+
+
+---
+
+Use Case 3: Update Quantity in Cart
+
+Title: Update product quantity and validate total
+
+Actor: End user
+
+Precondition: User has added at least one product to the cart
+
+Description:
+
+User sets quantity to 2 before adding the product to the cart.
+
+After verifying the total, the user opens the cart and reduces quantity to 1.
+
+
+Expected Result: The cart total updates correctly to reflect the new quantity.
+
+
+
+---
+
+Justification for Use Case Selection
+
+These use cases cover:
+
+Basic search interaction
+
+Core shopping workflow (product selection, updating quantity, cart)
+
+Validation of cart price logic
+
+UI reliability and feedback visibility
+
+
+They represent essential business-critical paths for any e-commerce site and are well-suited for front-end automation validation.
+
+
+---
+
+Prepared by: John Adel

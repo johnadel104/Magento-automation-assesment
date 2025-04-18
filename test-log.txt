@@ -1,0 +1,43 @@
+Automation Testing Log - Magento Cucumber Project
+==================================================
+
+Test Execution Date: 17-April-2025
+Environment: Chrome v135 / Windows 10
+Framework: WebdriverIO + Cucumber + JavaScript
+
+--------------------------------------------------
+Feature: Search functionality
+--------------------------------------------------
+Scenario: Search for a product (jacket)
+- Step: Given I am on Magento homepage ............ Passed
+- Step: When I search for jacket ................... Passed
+- Step: Then I should see results related to jacket Passed
+
+--------------------------------------------------
+Feature: Add to cart
+--------------------------------------------------
+Scenario: Add selected product to the cart
+- Step: When I open the first product .............. Passed
+- Step: When I select the size and color options ... Passed
+- Step: When I add the product to the cart ......... Passed
+- Step: Then I should see the product in the cart .. Passed
+
+--------------------------------------------------
+Feature: Update Quantity
+--------------------------------------------------
+Scenario: Update quantity before adding to cart
+- Step: When I set the quantity to 2 ............... Passed
+- Step: When I add the product to the cart ......... Passed
+- Step: When I open the cart ....................... Passed
+- Step: Then the cart total should be 2x price ..... Passed
+
+Scenario: Update quantity from cart
+- Step: When I update the quantity to 1 from cart .. Passed
+- Step: Then the cart total should be 1x price ..... Passed
+
+--------------------------------------------------
+Summary:
+Total tests: 3
+Passed: 3
+Failed: 0
+Skipped: 0
